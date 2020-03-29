@@ -10,17 +10,21 @@
 
 	<div id="fb-root"></div>
 	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v6.0"></script>
+	<!-- Load an icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 	<div id="menu" align=center>
 		<img src=https://upload.wikimedia.org/wikipedia/fr/8/86/Paris_Saint-Germain_Logo.svg width=150 align=left />
   		<table width="60%">
     		<tr>
-		        <td width="15%"><a href="#about"><center>About Kylian</center></a></td>
-        		<td width="15%"><a href="#photos"><center>Photos</center></a></td>
+		        <td width="15%"><a href="#about">About Kylian</center></a></td>
+        		<td width="15%"><a href="#photos">Photos</center></a></td>
         		<td width="15%"><a href="#playlist"><center>Playlist</center></a></td>
         		<td width="15%"><a href="#like"><center>Like</center></a></td>
         		<td width="15%"><a href="#qrcoder"><center>QR code</center></a></td>
-        		<td width="15%"><a href="#qanda"><center>Q&A</center></a></td>
-        		<td width="15%"><a href="#contact"><center>Contact</center></a></td>
+        		<td width="15%"><a href="#spa"><center>Q&A</center></a></td>
+        		<td width="15%"><a href="#contact">Contact</center></a></td>
     		</tr>
   		</table>
 	</div>
@@ -34,10 +38,12 @@
 	<br/>
 	<br/>
 
+
+
 	<section id="about" class="section">
 	<br/>
 	<br/>
-	<h1>About</h1>
+	<h1 id="h1">About Kylian</h1>
 	<br/>
 	Kylian Mbappé (born 20 December 1998) is a French professional footballer who plays as a forward for Ligue 1 club Paris Saint-Germain and the France national team.
 	<br/>
@@ -54,11 +60,13 @@
 	 <br/>
 	 <img src="KM1.jpg" width="134" height="150" class="author" />
 	<blockquote>
-		<div class="w3-container">
-			<div class="w3-panel w3-light-grey">
-          <span style="font-size:130px;line-height:0.6em;opacity:0.2">❝</span>
+		<span style="font-size:120px;line-height:0.9em;opacity:0.4">❝</span>
           <p class="w3-xlarge" style="margin-top:-40px"><i>"The thing about football - the important thing about football - is that it is not just about football."</i></p>
-          </div>
+		<!--<div class="w3-container">
+			<div class="w3-panel w3-light-grey">
+          <span style="font-size:120px;line-height:0.9em;opacity:0.4">❝</span>
+          <p class="w3-xlarge" style="margin-top:-40px"><i>"The thing about football - the important thing about football - is that it is not just about football."</i></p>
+          </div>-->
 	</blockquote>
 	 
 
@@ -75,7 +83,7 @@
 <br/>
 <br/>
 <br/>
-<h1>Photos<h1/>
+<h1 id="h1">Photos</h1>
 <br/>
 <br/>
 <img src=KM10.jpg width="30%" />
@@ -103,7 +111,7 @@
 <br/>
 <br/>
 <br/>
-<h1 id="h2">Give me a like</h1>
+<h1 id="h1">Give Kylian a like</h1>
 <img src="2Stars.jpg" width="10%" />
 <br/>
 <br/>
@@ -119,7 +127,7 @@
 <br/>
 <h1>Scan My Code</h1>
 <br/>
-<img src=qrcode.png width=25% />
+<img src="barkod.png" width="20%" />
 <br/>
 <br/>
 <br/>
@@ -130,18 +138,38 @@
 <br/>
 <br/>
 <br/>
-<h1 id="h1">Ans</h1>
+<h1 id="h1">QA Answers</h1>
+<br/>
+<h3>Main Difference between web1, web2 and web3</h3>
+<h3>Web 1.0:</h3>
+<p>
+  Web 1.0 is simply an information portal where users passively receive information without being given <br/>the opportunity to post reviews, comments, and feedback.
+</p>
+ <h3>Web 2.0:</h3>
+ <p>
+ Web 2.0 encourages participation, collaboration, and information
+sharing. <br/>Examples of Web 2.0 applications are Youtube, Wiki, Flickr, Facebook,
+and so on.
+</p>
+
+<h3>Web 3.0:</h3>
+<p>
+Web 3.0 is a semantic web which refers to the future. In Web 3.0, computers can interpret information
+<br/> like humans and intelligently generate and distribute useful content tailored to the needs of users. One example of Web 3.0 is Tivo, a digital video recorder. <br/>Its recording program can search the web and read what it finds to you based on your preferences.
+</p>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<h3>Use cases</h3>
+<h3>Web 1.0:</h3>
+<p>
+  As a user, I will need to know a lot of information about a certion website I am looking for so
+  <br/> I will be able to find the page and relative information, since that in web1 websites are
+  <br/> no links to other sites and no additional information.
+</p>
+ <h3>Web 3.0:</h3>
+ <p>
+ As a user, I will type a query of my choice in the search area and website will pop up in front of me <br/>in order of relevant and sites that are also might be important for me.
+</p>
 <br/>
 <br/>
 <br/>
@@ -153,7 +181,7 @@
 <br/>
 <h1 id="h1">Contact Me</h1>
 <br/>
-<form action="mailto:benichos@post.bgu.ac.il" method="post" enctype="text/plain">
+<!--<form action="mailto:benichos@post.bgu.ac.il" method="post" enctype="text/plain">
     Name:<br>
     <input type="text" name="name"><br>
     <br/>
@@ -161,21 +189,52 @@
     <input type="email" name="mail"><br>
     <br/>
     Message:<br>
-    <input type="text" name="comment" size="50"><br><br>
+    
+    <td><textarea name="comment" rows="5" cols="34"></textarea></td>
+    <br/>
+
     <input type="submit" class=button value="Send">
     <input type="reset"  class=button value="Reset">
+    
+          <td><input style="border:transparent; background-color: transparent" type="button" onclick="push('&#127773')" name=imog value=&#127773;>
+    
+
     <input type="button" style="border: transparent; background-color: transparent;" class="button1 bouncy" value="&#128522" onclick="push ('&#128522')">
   <input type="button" style="border: transparent; background-color: transparent; animation-delay:0.07s;" class="button1 bouncy" value="&#128521" onclick="push ('&#128521')">
   <input type="button" style="border: transparent; background-color: transparent; animation-delay:0.14s;" class="button1 bouncy" value="&#128514" onclick="push ('&#128514')">
   <input type="button" style="border: transparent; background-color: transparent; animation-delay:0.21s;" class="button1 bouncy" value="&#128530" onclick="push ('&#128530')">
   <input type="button" style="border: transparent; background-color: transparent; animation-delay:0.28s;" class="button1 bouncy" value="&#128545" onclick="push ('&#128545')">
+
+
   <div id="buttons"></div>
 </div>
-</form>
-<br/>
+</form>-->
+
+     <form name=samuel action="mailto:benichos@post.bgu.ac.il" method="post" enctype="text/plain">
+    Name:<br>
+    <input type="text" name="name"><br>
+    <br/>
+    E-mail:<br>
+    <input type="email" name="mail"><br>
+    <br/>
+    Message:<br>
+          <textarea name="comment" rows="5" cols="34"></textarea>
+        <br>
+          <input style="border:transparent; background-color: transparent" type="button" onclick="addEmoji('&#128522')" name=imog value=&#128522;>
+          <input style="border:transparent; background-color: transparent" type="button" onclick="addEmoji('&#127773')" name=imog value=&#127773;>
+          <input style="border:transparent; background-color: transparent" type="button" onclick="addEmoji('&#128521')" name=imog value=&#128521;>
+          <input style="border:transparent; background-color: transparent" type="button" onclick="addEmoji('&#128545')" name=imog value=&#128545;>
+          <input style="border:transparent; background-color: transparent" type="button" onclick="addEmoji('&#128530')" name=imog value=&#128530;>
+          <input style="border:transparent; background-color: transparent" type="button" onclick="addEmoji('&#128514')" name=imog value=&#128514;>
+        <br/>
+          <input type="submit" class=button value="Send">
+    	<input type="reset"  class=button value="Reset">
+    	<br/>
+        
+      </form>
+    
 <br/>
 </section>
-
 
 <script type="text/javascript">
 $(function(){
@@ -190,6 +249,11 @@ $(function(){
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
  </script>
+ <script type="text/javascript">
+    function addEmoji(emoji) {
+      document.samuel.comment.value += emoji;
+    }
+  </script>
 </body>
 
 
